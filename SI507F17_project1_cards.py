@@ -33,10 +33,6 @@ class Deck(object):
                 self.cards.append(card) # appends in a sorted order
 
     def __str__(self):
-        total = []
-        for card in self.cards:
-            total.append(card.__str__())
-        # shows up in whatever order the cards are in
         return "{rank} of {suit}".format({"rank": self.rank, "suit": self.suit }) # returns a multi-line string listing each card
 
     def pop_card(self, i=-1): 
