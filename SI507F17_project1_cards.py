@@ -28,8 +28,13 @@ class Deck(object):
         # This working depends on Card class existing above
         self.cards = []
         for suit in range(4):
+<<<<<<< HEAD
             for ranks in range(1,14):
                 card = Card(suit,ranks)
+=======
+            for number in range(1,14):
+                card = Card(suit,number)
+>>>>>>> 544803f71f17d109772edec7253180f32d948e50
                 self.cards.append(card) # appends in a sorted order
 
     def __str__(self):
