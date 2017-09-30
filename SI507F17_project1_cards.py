@@ -28,7 +28,7 @@ class Deck(object):
         # This working depends on Card class existing above
         self.cards = []
         for suit in range(4):
-            for rank in range(1,14):
+            for ranks in range(1,14):
                 card = Card(suit,rank)
                 self.cards.append(card) # appends in a sorted order
 
