@@ -29,7 +29,7 @@ class Deck(object):
         self.cards = []
         for suit in range(4):
             for ranks in range(1,14):
-                card = Card(suit,rank)
+                card = Card(suit,ranks)
                 self.cards.append(card) # appends in a sorted order
 
     def __str__(self):
