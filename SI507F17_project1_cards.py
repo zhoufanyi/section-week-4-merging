@@ -33,7 +33,7 @@ class Deck(object):
                 self.cards.append(card) # appends in a sorted order
 
     def __str__(self):
-        return "{rank} of {suit}".format({"rank": self.rank, "suit": self.suit }) # returns a multi-line string listing each card
+        return "{ranks} of {suits}".format({"rank": self.rank, "suit": self.suit }) # returns a multi-line string listing each card
 
     def pop_card(self, i=-1): 
         return self.cards.pop(i) # this card is no longer in the deck -- taken off
